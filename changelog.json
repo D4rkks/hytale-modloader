@@ -1,0 +1,57 @@
+{
+  "latestVersion": "1.0.0",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-01-21",
+      "title": "Lançamento Inicial",
+      "type": "major",
+      "changes": [
+        {
+          "category": "new",
+          "description": "Gerenciador de Mods com suporte a ModTale e CurseForge"
+        },
+        {
+          "category": "new",
+          "description": "Sistema de instâncias múltiplas"
+        },
+        {
+          "category": "new",
+          "description": "Login com conta Hytale via OAuth"
+        },
+        {
+          "category": "new",
+          "description": "Download em lote de mods selecionados"
+        },
+        {
+          "category": "new",
+          "description": "Infinite scroll na lista de mods"
+        },
+        {
+          "category": "new",
+          "description": "Persistência de mods instalados"
+        }
+      ]
+    },
+    {
+      "version": "0.9.0",
+      "date": "2026-01-12",
+      "title": "Beta Fechado",
+      "type": "minor",
+      "changes": [
+        {
+          "category": "new",
+          "description": "Interface inicial do launcher"
+        },
+        {
+          "category": "new",
+          "description": "Sistema de amigos e rede social"
+        },
+        {
+          "category": "fix",
+          "description": "Correções de estabilidade"
+        }
+      ]
+    }
+  ]
+}
