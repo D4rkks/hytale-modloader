@@ -14,6 +14,7 @@ An open-source instance manager and modloader for Hytale, focused on performance
 ### 🔑 Account Management & Security
 - **Hytale Login:** Secure OAuth2 authentication for official Hytale access.
 - **Multi-Account Support:** Quickly switch between different accounts without re-logging.
+- **Offline Support:** Able to play with a offline account (but you cant use server functions yet)
 
 ### 📦 Instance Management (Prism-Style)
 - **Total Isolation:** Each instance maintains its own folders for mods, screenshots, saves, and settings.
