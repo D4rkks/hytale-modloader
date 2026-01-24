@@ -38,6 +38,9 @@ discord channel for help - https://discord.gg/mugQgRFQvF
 
 ---
 
+## Contributions
+Feel free to add any contribution! (PR to dev branch, please)
+
 ## 🚀 Getting Started (Development)
 
 1. **Clone the repository:**
