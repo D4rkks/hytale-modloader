@@ -13,7 +13,7 @@ discord channel for help - https://discord.gg/mugQgRFQvF
   <img src="https://github.com/user-attachments/assets/79a12b51-35f0-4bff-bb1d-7a75b5271a3f" width="30%" />
   <img src="https://github.com/user-attachments/assets/eb60e69f-67d8-4f63-a0fc-762a6889c197" width="30%" />
 </p>
----
+
 
 ## ✨ Planned Features
 
