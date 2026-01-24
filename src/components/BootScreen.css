@@ -1,0 +1,59 @@
+.boot-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.boot-center {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.boot-icon {
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+
+.boot-progress-wrapper {
+    width: 100%;
+    height: 2px;
+    background: #222;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.boot-bar {
+    height: 100%;
+    background: #fff;
+    transition: width 0.1s linear;
+}
+
+.boot-status {
+    font-size: 0.7rem;
+    letter-spacing: 0.5em;
+    color: #444;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}

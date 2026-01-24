@@ -1,0 +1,297 @@
+.account-setup-overlay {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+}
+
+.setup-container {
+    width: 400px;
+    background: #141414;
+    border: 1px solid #1f1f1f;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.setup-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.setup-header h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.setup-header p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.empty-icon {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.empty-state p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.accounts-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.account-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #1a1a1a;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.account-card:hover {
+    background: #222;
+    border-color: #333;
+}
+
+.account-avatar {
+    width: 36px;
+    height: 36px;
+    background: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.account-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.acc-name {
+    font-weight: 600;
+    color: #fff;
+}
+
+.acc-type {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.remove-btn {
+    background: transparent;
+    border: none;
+    color: #444;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.remove-btn:hover {
+    background: rgba(255, 0, 0, 0.1);
+    color: #ff4444;
+}
+
+.primary-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.primary-btn:hover {
+    background: #e0e0e0;
+}
+
+.primary-btn.full {
+    width: 100%;
+}
+
+.primary-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.text-btn {
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 10px;
+}
+
+.text-btn:hover {
+    color: #fff;
+}
+
+.add-account-panel {
+    border-top: 1px solid #1f1f1f;
+    margin-top: 20px;
+    padding-top: 20px;
+    animation: slideDown 0.2s ease-out;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.panel-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+}
+
+.type-params {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.type-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #1a1a1a;
+    border: 1px solid #222;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.type-option:hover {
+    background: #222;
+    border-color: #444;
+}
+
+.type-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.type-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.type-desc {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.login-step {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.step-desc {
+    color: #888;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.modern-input {
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid #222;
+    padding: 12px;
+    border-radius: 6px;
+    color: #fff;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.modern-input:focus {
+    border-color: #555;
+}
+
+.code-display {
+    font-family: 'Consolas', monospace;
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    color: #fff;
+    margin: 20px 0;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px dashed #333;
+}
+
+.loading-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.spinner-sm {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #333;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

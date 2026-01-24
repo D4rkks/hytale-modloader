@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orbis Launcher</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Rajdhani:wght@700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'hytale-bg': '#0a0f16',
+            'hytale-panel': '#1c2635',
+            'hytale-border': '#323e4f',
+            'hytale-accent': '#f5b841',
+            'hytale-mana': '#47d7ff',
+            'hytale-emerald': '#96cc39',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --hytale-bg: #0a0f16;
+      --hytale-panel: #1c2635;
+      --hytale-border: #323e4f;
+      --hytale-accent: #f5b841;
+      --hytale-mana: #47d7ff;
+      --hytale-emerald: #96cc39;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: transparent;
+      color: #ffffff;
+      overflow: hidden;
+      user-select: none;
+      margin: 0;
+    }
+
+    .orbis-panel {
+      background: rgba(28, 38, 53, 0.9);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--hytale-border);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(71, 215, 255, 0.02);
+      border-radius: 4px;
+    }
+    .btn-play-orbis {
+      background: linear-gradient(135deg, var(--hytale-accent) 0%, #d9a32c 100%);
+      color: #1a1c21;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%);
+      transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+      box-shadow: 0 5px 15px rgba(245, 184, 65, 0.2);
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-play-orbis:hover {
+      transform: scale(1.02) translateX(3px);
+      filter: brightness(1.1);
+      box-shadow: 0 10px 25px rgba(245, 184, 65, 0.4);
+    }
+
+    .nav-link-orbis {
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: rgba(255, 255, 255, 0.4);
+      transition: all 0.3s;
+      position: relative;
+      font-size: 0.85rem;
+    }
+
+    .nav-link-orbis.active {
+      color: #ffffff;
+    }
+
+    .nav-link-orbis.active::before {
+      content: '';
+      position: absolute;
+      left: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 18px;
+      background: var(--hytale-mana);
+      box-shadow: 0 0 10px var(--hytale-mana);
+    }
+
+    .logo-orbis {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-shadow: 0 2px 10px rgba(245, 184, 65, 0.5);
+    }
+
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--hytale-border);
+      border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 0.4s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
